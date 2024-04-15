@@ -96,7 +96,7 @@ export default function App() {
   useEffect(function () {
     const fetchQuestions = async () => {
       try {
-        const res = await fetch(`http://localhost:8000/questions`);
+        const res = await fetch(`https://quiz-app-h92s.onrender.com/data/questions`);
         console.log(res);
         if (!res.ok) throw new Error("Unable to fetch questions");
         const questions = await res.json();
